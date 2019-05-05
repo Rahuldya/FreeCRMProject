@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96149" started-at="2019-05-05T08:25:51Z" finished-at="2019-05-05T08:27:27Z">
+  <suite name="Default suite" duration-ms="91677" started-at="2019-05-05T09:29:45Z" finished-at="2019-05-05T09:31:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96149" started-at="2019-05-05T08:25:51Z" finished-at="2019-05-05T08:27:27Z">
+    <test name="Default test" duration-ms="91677" started-at="2019-05-05T09:29:45Z" finished-at="2019-05-05T09:31:17Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="37427" started-at="2019-05-05T13:55:51Z" finished-at="2019-05-05T13:56:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="29344" started-at="2019-05-05T14:59:45Z" finished-at="2019-05-05T15:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="loginPageTitleTest" duration-ms="99" started-at="2019-05-05T13:56:28Z" finished-at="2019-05-05T13:56:28Z">
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="loginPageTitleTest" duration-ms="61" started-at="2019-05-05T15:00:15Z" finished-at="2019-05-05T15:00:15Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found [#1 Free CRM software in the Cloud FreeCRM]]]>
+              <![CDATA[expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found [#1 Free CRM software in the Cloud FreeCRM]
+              <![CDATA[java.lang.AssertionError: expected [CRMPRO  - CRM software for customer relationship management, sales, and support.] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
@@ -56,31 +56,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="5089" started-at="2019-05-05T13:56:28Z" finished-at="2019-05-05T13:56:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="4619" started-at="2019-05-05T15:00:15Z" finished-at="2019-05-05T15:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="22520" started-at="2019-05-05T13:56:33Z" finished-at="2019-05-05T13:56:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="23056" started-at="2019-05-05T15:00:19Z" finished-at="2019-05-05T15:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="crmLogoImageTest" duration-ms="380" started-at="2019-05-05T13:56:56Z" finished-at="2019-05-05T13:56:56Z">
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="crmLogoImageTest" duration-ms="447" started-at="2019-05-05T15:00:42Z" finished-at="2019-05-05T15:00:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="4269" started-at="2019-05-05T13:56:56Z" finished-at="2019-05-05T13:57:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="5123" started-at="2019-05-05T15:00:43Z" finished-at="2019-05-05T15:00:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="19923" started-at="2019-05-05T13:57:01Z" finished-at="2019-05-05T13:57:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="setUp" is-config="true" duration-ms="23057" started-at="2019-05-05T15:00:48Z" finished-at="2019-05-05T15:01:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="loginTest" duration-ms="1183" started-at="2019-05-05T13:57:21Z" finished-at="2019-05-05T13:57:22Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="loginTest" duration-ms="900" started-at="2019-05-05T15:01:11Z" finished-at="2019-05-05T15:01:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="5108" started-at="2019-05-05T13:57:22Z" finished-at="2019-05-05T13:57:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@61832929]" name="tearDown" is-config="true" duration-ms="4924" started-at="2019-05-05T15:01:12Z" finished-at="2019-05-05T15:01:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
