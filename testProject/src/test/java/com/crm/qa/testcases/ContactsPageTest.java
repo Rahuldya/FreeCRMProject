@@ -50,7 +50,7 @@ public class ContactsPageTest extends TestBase{
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		TestUtil.runTimeInfo("error", "login successful");
-		testUtil.switchToFrame();
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 	}
 	
@@ -59,12 +59,12 @@ public class ContactsPageTest extends TestBase{
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "contacts label is missing on the page");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	public void selectSingleContactsTest(){
 		contactsPage.selectContactsByName("test2 test2");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=false)
 	public void selectMultipleContactsTest(){
 		contactsPage.selectContactsByName("test2 test2");
 		contactsPage.selectContactsByName("ui uiii");
@@ -90,7 +90,7 @@ public class ContactsPageTest extends TestBase{
 
 	@AfterMethod
 	public void tearDown(){
-		driver.quit();
+		//driver.quit();
 	}
 	
 	

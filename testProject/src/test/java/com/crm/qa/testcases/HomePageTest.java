@@ -1,5 +1,8 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -37,20 +40,21 @@ public class HomePageTest extends TestBase {
 	
 	
 	@Test(priority=1)
-	public void verifyHomePageTitleTest(){
+	public void verifyHomePageTitleTest() throws InterruptedException{
 		String homePageTitle = homePage.verifyHomePageTitle();
+		
 		Assert.assertEquals(homePageTitle, "CRMPRO","Home page title not matched");
 	}
 	
 	@Test(priority=2)
-	public void verifyUserNameTest(){
-		testUtil.switchToFrame();
+	public void verifyUserNameTest() throws InterruptedException{
+		testUtil.switchToFrame("mainpanel");
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 	}
 	
 	@Test(priority=3)
-	public void verifyContactsLinkTest(){
-		testUtil.switchToFrame();
+	public void verifyContactsLinkTest() throws InterruptedException{
+		testUtil.switchToFrame("mainpanel");
 		contactsPage = homePage.clickOnContactsLink();
 	}
 	
@@ -58,6 +62,8 @@ public class HomePageTest extends TestBase {
 	
 	@AfterMethod
 	public void tearDown(){
+		//int size = driver.findElements(By.tagName("iframe")).size();
+		//System.out.println(size);
 		driver.quit();
 	}
 	
