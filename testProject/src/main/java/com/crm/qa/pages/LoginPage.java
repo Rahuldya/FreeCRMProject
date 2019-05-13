@@ -42,7 +42,7 @@ public class LoginPage extends TestBase{
 	public HomePage login(String un, String pwd){
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		loginBtn.click();
+		//loginBtn.click();
 		    	JavascriptExecutor js = (JavascriptExecutor)driver;
 		    	js.executeScript("arguments[0].click();", loginBtn);
 		    	
